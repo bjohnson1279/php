@@ -27,7 +27,15 @@ class HTMLInput {
     private $step;
     
     function __construct($name = null, $id = null) {
+        if ($name) {
+            $this->name;
+            if (!$id)
+                $this->id = $name;
+        }
         
+        if ($id) {
+            $this->id = $id;
+        }
     }
 }
 ?>
