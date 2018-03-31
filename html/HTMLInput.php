@@ -37,5 +37,13 @@ class HTMLInput {
             $this->id = $id;
         }
     }
+    
+    function val($val) {
+        $this->value = $val;
+    }
+    
+    function setValue($field, $value) {
+        $this->$field = $value;
+    }
 }
 ?>
